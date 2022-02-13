@@ -1,0 +1,17 @@
+﻿@model Portfolio
+
+<form method="post">
+    <div class="col-5">
+       <label asp-for=PhotoURL class="label"></label>
+       <input class="form-control mb-2" asp-for="PhotoURL" />
+           
+              @* @foreach (var category in ViewBag.Category)
+               {
+                 <option value="@category.ID">@category.CategoryName</option>
+               }*@
+           
+      
+       <input class="btn btn-warning btn-sm" type="submit" value="Create" />
+    </div>
+
+</form>
